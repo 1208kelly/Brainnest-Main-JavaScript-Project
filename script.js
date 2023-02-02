@@ -28,3 +28,41 @@ function game(){
         console.log("Sorry!  You lost to the computer " + computerPoints + " to " + playerPoints);
     }
 }
+
+function playRound(playerSelection, computerSelection){  
+    if (playerSelection === 'rock' && playerSelection === choices[0]) {
+        if (computerSelection ==='scissors') {
+            return 'wins';
+        } else if (computerSelection === 'paper') {
+            return 'loses';
+        } else {
+            return 'ties';
+        }
+    } else {
+        prompt ('Wrong choice! Type again')
+    }
+    if (playerSelection === 'paper' && playerSelection === choices[1]) {
+        if (computerSelection === 'rock') {
+            return 'wins';
+        } else if (computerSelection === 'scissors') {
+            return 'loses';
+        } else {
+            return 'ties';
+        } 
+    } else {
+        prompt ('Wrong choice! Type again')
+    }
+    if (playerSelection === 'scissors' && playerSelection === choices[2]) {
+        if (computerSelection === 'rock') {
+            return 'loses';
+        } else if (computerSelection === 'paper') {
+            return 'wins';
+        } else {
+            return 'ties';
+        } 
+    } else {
+        prompt ('Wrong choice! Type again')
+    }
+}
+
+game();
