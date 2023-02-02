@@ -39,7 +39,7 @@ function playRound(playerSelection, computerSelection){
             return 'ties';
         }
     } else {
-        prompt ('Wrong choice! Type again')
+        prompt ('Wrong choice! Try again')
     }
     if (playerSelection === 'paper' && playerSelection === choices[1]) {
         if (computerSelection === 'rock') {
@@ -50,7 +50,7 @@ function playRound(playerSelection, computerSelection){
             return 'ties';
         } 
     } else {
-        prompt ('Wrong choice! Type again')
+        prompt ('Wrong choice! Try again')
     }
     if (playerSelection === 'scissors' && playerSelection === choices[2]) {
         if (computerSelection === 'rock') {
@@ -61,7 +61,7 @@ function playRound(playerSelection, computerSelection){
             return 'ties';
         } 
     } else {
-        prompt ('Wrong choice! Type again')
+        prompt ('Wrong choice! Try again')
     }
 }
 
