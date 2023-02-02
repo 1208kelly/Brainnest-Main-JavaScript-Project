@@ -12,13 +12,19 @@ function game(){
 
         let round = playRound(playerSelection, computerSelection);
         if(round === "wins"){
-        playerPoints++;
-        console.log("You Win");
+            playerPoints++;
+            console.log("You Win");
         } else if(round === "loses"){
-        computerPoints++;
-        console.log("You Lose");
+            computerPoints++;
+            console.log("You Lose");
         } else if(round === "ties") {
-        console.log("tied");
+            console.log("tied");
         } 
+    }
+    if(playerPoints > computerPoints){
+        console.log('');
+        console.log("Congratulations!  You beat the computer " + playerPoints + " to " + computerPoints);
+    } else {
+        console.log("Sorry!  You lost to the computer " + computerPoints + " to " + playerPoints);
     }
 }
