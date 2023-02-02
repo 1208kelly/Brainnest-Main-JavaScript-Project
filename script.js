@@ -24,8 +24,10 @@ function game(){
     if(playerPoints > computerPoints){
         console.log('');
         console.log("Congratulations!  You beat the computer " + playerPoints + " to " + computerPoints);
+        document.write("Congratulations!  You beat the computer " + playerPoints + " to " + computerPoints);
     } else {
         console.log("Sorry!  You lost to the computer " + computerPoints + " to " + playerPoints);
+        document.write("Sorry!  You lost to the computer " + computerPoints + " to " + playerPoints);
     }
 }
 
